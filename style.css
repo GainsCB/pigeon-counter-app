@@ -1,0 +1,106 @@
+/* Root */
+
+:root {
+  /* colors */
+  --text: #efece9;
+  --background: #192524;
+  --primary: #d1ebdb;
+  --secondary: #d0d5ce;
+  --accent: #3c5759;
+
+  /* fonts */
+  --ff-gudea: "Gudea", serif;
+}
+
+/* Basics */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--ff-gudea);
+  background: var(--background);
+  color: var(--text);
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+  margin: 20px 0;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 45px;
+  color: var(--primary);
+}
+
+p {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+/* Containers */
+
+.container {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: var(--background);
+  width: 550px;
+  margin: 100px auto;
+  padding: 20px 0 ;
+}
+
+.container-name {
+  margin: 20px;
+}
+
+.container-count {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border: 2px solid var(--background);
+  margin: 25px 100px;
+  padding: 30px;
+}
+
+/* Buttons */
+
+button {
+  font-family: var(--ff-gudea);
+  font-weight: bold;
+  letter-spacing: 1px;
+  border: 2px solid var(--secondary);
+  border-radius: 5px;
+  background-color: var(--primary);
+  color: var(--background);
+  padding: 5px 7.5px;
+}
+
+.container-name button {
+  padding: 9px;
+}
+
+.container-sums button,
+.container-clear button {
+  margin: 15px 0;
+  padding: 7.5px 10px;
+}
+
+input,
+input:focus {
+  min-width: 200px;
+  height: 40px;
+  padding: 15px;
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-family: inherit;
+  font-weight: bold;
+  background-color: var(--primary);
+  color: var(--accent);
+  outline: none; /* Removes outine on focus */
+  text-transform: capitalize;
+}
